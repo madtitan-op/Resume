@@ -31,3 +31,8 @@ h1{
 li{
     list-style:circle;
 }
+.icon {
+    display: inline-block;
+    vertical-align: text-bottom;
+  }
+  
