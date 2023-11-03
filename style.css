@@ -1,20 +1,27 @@
 body{
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: 'Barlow', sans-serif;
-    background-color:antiquewhite;
+    background-color: #f5f5dc;
+    color: #333;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: #e6e6da;
+    }
 }
 a{
     text-decoration: none;
-    color: black;
+    color: inherit;
 }
 h1{
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-family: 'Ubuntu', sans-serif;
 }
 #profile-pic{
     height: 180px;
     margin-left: 25px;
-    border-radius: 180px;
+    border-radius: 50%;
     position: relative;
 }
 .icon{
@@ -39,4 +46,3 @@ li{
     display: inline-block;
     vertical-align: text-bottom;
   }
-  
