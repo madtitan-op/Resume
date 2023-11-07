@@ -45,4 +45,9 @@ li{
 .icon {
     display: inline-block;
     vertical-align: text-bottom;
-  }
+}
+
+footer{
+    text-align: center;
+    font-size: small;
+}
