@@ -4,29 +4,39 @@ body{
     color: #333;
 }
 
+#profile-pic{
+    height: 180px;
+    margin-left: 25px;
+    border-radius: 50%;
+    position: relative;
+    border: #e6e6da solid 4px;
+    box-shadow: 5px 5px 10px #333;
+}
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #333;
         color: #e6e6da;
     }
+    #profile-pic{
+        box-shadow: 5px 5px 10px #000;
+    }
 }
+
 a{
     text-decoration: none;
     color: inherit;
 }
+
 h1{
     font-family: 'Ubuntu', sans-serif;
 }
-#profile-pic{
-    height: 180px;
-    margin-left: 25px;
-    border-radius: 50%;
-    position: relative;
-}
+
 .icon{
     width: 20px;
 }
+
 #contact{
     display: inline-block;
     vertical-align: top;
@@ -36,12 +46,15 @@ h1{
     position: relative;
     left: 10px;
 }
+
 #linkedin{
     vertical-align: 20px;
 }
+
 li{
     list-style:circle;
 }
+
 .icon {
     display: inline-block;
     vertical-align: text-bottom;
