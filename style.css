@@ -13,17 +13,6 @@ body{
     box-shadow: 5px 5px 10px #333;
 }
 
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #333;
-        color: #e6e6da;
-    }
-    #profile-pic{
-        box-shadow: 5px 5px 10px #000;
-    }
-}
-
 a{
     text-decoration: none;
     color: inherit;
@@ -31,6 +20,14 @@ a{
 
 h1{
     font-family: 'Ubuntu', sans-serif;
+}
+
+h3{
+    margin-bottom: 0px;
+}
+
+p{
+    margin-top: 10px;
 }
 
 .icon{
@@ -56,11 +53,40 @@ li{
 }
 
 .icon {
-    display: inline-block;
     vertical-align: text-bottom;
 }
 
 footer{
     text-align: center;
     font-size: small;
+}
+
+.skills > ul{
+    display: flex;
+    gap: 30px;
+}
+
+.experience li{
+    list-style: none;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: #e6e6da;
+    }
+    #profile-pic{
+        box-shadow: 5px 5px 10px #000;
+    }
+}
+
+@media (max-width: 511px){
+    #contact{
+        margin-top: 10px;
+    }
+    
+    .skills > ul{
+        display: block;
+    }
 }
